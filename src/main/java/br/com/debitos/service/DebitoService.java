@@ -20,4 +20,8 @@ public class DebitoService {
     public Debito save(Debito debito) {
         return debitoRepository.save(debito);
     }
+
+    public Debito findById(Long id) {
+        return debitoRepository.findOne(id);
+    }
 }
